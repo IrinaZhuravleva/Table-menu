@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<title>Document</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+
+		<!-- кусок из mainmenu.vue -->
+	
+	    <div id="main_menu">
+	    	<div class="container">
+	       
+		        <nav class="mainMenu">
+		        	<ul>
+		            <!-- Когда происходит нажатие на ссылку, вызываем метод makeActive, определенный как js-сущность Vue. -->
+			            <li>
+			            	<a href="#" class="mainPage">Главная</a>
+		            		<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+						</li>
+			            <li><a href="#" class="driver">Водители</a>
+		            		<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="counterparty">Контрагент</a>
+			            	<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="trip">Поездки</a>
+			            	<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="car">Машины</a>
+			            	<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="mileage">Расход топлива</a>
+							<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="repair">Подготовка</a>
+							<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+			            <li>
+			            	<a href="#" class="admin">Администрирование</a>
+							<ul class="droplink">
+								<li class="droplink-item"><a href="#">Список</a></li>
+								<li class="droplink-item"><a href="#">Редактировать</a></li>
+								<li class="droplink-item"><a href="#">Новый</a></li>
+							</ul>
+			            </li>
+		            </ul>
+		        </nav>
+		    </div>
+	    </div>
+		
+
+		<div class="container block-wrapper">
+			<ul class="block-notes">
+				<li class="block-notes__title"><a>Запись 1</a></li>
+				<li class="block-notes__title"><a>Запись 2</a></li>
+				<li class="block-notes__title"><a>Запись 3</a></li>
+			</ul>
+
+			<div class="block-form">
+				<form action="">
+					<label for="">
+						<input type="text" placeholder="text">
+					</label>
+					<label for="">
+						<input type="number" placeholder="number">
+					</label>
+					<label for="">
+						<input type="password" placeholder="password" minlength="3">
+					</label>
+					<label for="">
+						<input type="email" placeholder="email">
+					</label>
+					<label for="">
+						<input type="login" placeholder="login">
+					</label>	
+					<label for="">
+						<textarea rows="5" name="text" placeholder="placeholder"></textarea>
+					</label>	
+
+					<button type="submit" value="">Отправить</button>
+
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #5e5b64;
+    text-align: left;
+}
+
+/*выпадающее меню*/
+.mainMenu li {
+    position: relative;
+}
+
+ul.droplink {
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    z-index: 2;
+    display: none!important;
+    background-color: #5597b4;
+    flex-direction: column!important;
+}
+
+.droplink-item {
+    display: block;
+    padding: 10px;
+}
+
+li.droplink-item:hover {
+    color: red;
+}
+
+.droplink-item a {
+    padding: 10px!important;
+}
+
+.mainMenu li:hover ul.droplink {
+    display: flex!important;
+}
+
+/*конец выпадающего меню*/
+
+
+
+
+
+
+a:hover {
+    text-decoration: none;
+}
+
+section, footer, header, aside, nav {
+    display: block;
+}
+
+		/*<!-- end --кусок из app.vue -->*/
+
+/*<!----кусок из mainmenu.vue -->*/
+
+.container {
+    margin: 0 auto;
+    width: 1200px;   
+}
+
+#main_menu {
+    width: 100%;
+    background-color: #5597b4;
+    box-shadow: 0 1px 1px #ccc;
+    border-radius: 2px;
+}
+
+nav.mainMenu ul {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav.mainMenu li a {
+    padding: 18px;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none !important;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+}
+
+nav.mainMenu li a:hover {
+    background-color: grey;
+}
+
+nav.mainMenu li a:hover ~ .mainPage{
+    background-color: grey;
+}
+
+/*//мои стили*/
+
+/*ul {
+    list-style: none;
+     padding: 20px;
+}*/
+
+.container {
+    margin: 0 auto;
+    width: 1200px;   
+}
+
+.block-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.block-notes {
+    list-style: none;
+     padding: 20px;
+}
+
+.block-notes {
+    width: 35%;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #5597b4;
+}
+
+.block-notes li{
+    padding: 20px 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.block-notes li:hover {
+    background-color: grey;
+    opacity: .7;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: background-color .2 ease;
+    color: #fff;
+
+    
+}
+.block-form input {
+   margin: 20px 0;
+}
+
+.block-form {
+    margin-top: 50px;
+    width: 35%;
+    background-color: #5597b4;
+    border: 1px solid #5597b4;
+    border-radius: 15px;
+}
+
+.block-form form {
+    
+    /*width: 50%;*/
+   
+    display: flex;
+    
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+label {
+    padding: 20px 0;
+}
+
+.block-form input, textarea {
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #5e5b64;
+    font-size: 14px;
+}
+
+form button {
+    padding: 15px 30px;
+    outline: none!important;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5e5b64;
+    font-size: 14px;
+    /* background-color: #5597b4; */
+    background-color: #fff;
+    border: 1px solid #5597b4;
+    border-radius: 30px;
+    text-transform: uppercase;
+    width: 200px;
+    margin: 40px auto;
+}
+
+form button:hover {
+    background-color: grey;
+    color: #fff;
+    outline: none!important;
+    border: none;
+}
+
+/*//конец -- мои стили*/
+
+
+
+
+/*nav a {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    color: #fff !important;
+    
+    font-weight: bold;
+    font-size: 16px;
+}
+*/
+nav.mainPage .mainPage,
+nav.driver .driver,
+nav.trip .trip,
+nav.car .car,
+nav.mileage .mileage,
+nav.repair .repair,
+nav.counterparty .counterparty,
+nav.admin .admin {
+    background-color: #1f1f24;
+}
+
+/*nav .admin {
+    flex-grow: 1;
+}*/
+	/*<!-- end --кусок из mainmenu.vue -->
+
+	<!--кусок из tableeditor.vue -->*/
+
+
+#notes_list, #note_editor {
+    position: absolute;
+}
+#notes_list, #note_editor {
+    overflow: auto;
+    padding: 10px;
+}
+
+
+nav a button {
+    width: 100%;
+    /*color: white;*/
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+nav a:hover {
+    background: gray;
+}
+
+nav a button span {
+    padding: 5px;
+    color: white;
+}
+
+#note_editor {
+    top: 82px; 
+   left: 170px; 
+    bottom: 0;
+    right: 0;
+}
+
+
+/*<!--end --- кусок из tableeditor.vue -->*/
